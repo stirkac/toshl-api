@@ -29,10 +29,13 @@ end
 response = Toshl::Entry.list()
 ```
 
-# .. you get array of hashes back, so you can play around
+... you get array of hashes back, so you can play around
 
 ```ruby
-funky_export = Toshl::Entry.list("2017-09-01".to_date.."2017-09-30".to_date).map{ |e| e.slice("amount", "date", "desc", "category", "account", "completed", "deleted").map{ |k, v| v}.join(",") }.join("\n")
+funky_export = Toshl::Entry.list("2017-09-01".to_date.."2017-09-30".to_date).
+  map{ |e| e.slice("amount", "date", "desc", "category", "account", "completed", "deleted").
+  map{ |k, v| v}.join(",") }.
+  join("\n")
 ```
 
 # Get All Accounts
