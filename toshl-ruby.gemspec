@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'toshl/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'toshl-api'
+  spec.name          = 'toshl-ruby'
   spec.version       = Toshl::VERSION
   spec.authors       = ['Sebastjan Stojnsek']
   spec.email         = ['sebastjan.stojnsek@poviolabs.com']

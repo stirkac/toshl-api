@@ -3,7 +3,7 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'toshl-api'
+gem 'toshl-ruby'
 ```
 
 And then execute:
@@ -12,7 +12,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install toshl-api
+    $ gem install toshl-ruby
 
 ## Usage
 
